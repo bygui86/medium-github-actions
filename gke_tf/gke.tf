@@ -1,11 +1,3 @@
-terraform {
-  backend "artifactory" {
-    url     = "https://bettercallpavan.jfrog.io/artifactory"
-    repo    = "terraform-backends"
-    subpath = "terraform-gke"
-  }
-}
-
 provider "google" {
   project = var.project_id
   region  = var.location
